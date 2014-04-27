@@ -5,7 +5,9 @@ node_modules
 # Logs
 logs
 *.log
-
+obj/*
+*.suo
+*.sln
 # Runtime data
 pids
 *.pid

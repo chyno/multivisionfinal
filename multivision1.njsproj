@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{edcba088-2d90-465c-8ca5-51d6c3f17aab}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="logs.txt" />
+        <Content Include="readme.txt" />
+        <Content Include="bower.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="karma.conf.js" />
+        <Compile Include="server.js" />
+        <Content Include="public\favicon.ico" />
+        <Compile Include="test\test-app.js" />
+        <Content Include="obj\Debug\logs.txt" />
+        <Content Include="obj\Debug\multivision.njsproj.FileListAbsolute.txt" />
+        <Content Include="obj\Debug\readme.txt" />
+        <Content Include="obj\Debug\bower.json" />
+        <Content Include="obj\Debug\package.json" />
+        <Compile Include="obj\Debug\karma.conf.js" />
+        <Compile Include="obj\Debug\server.js" />
+        <Content Include="obj\Debug\public\favicon.ico" />
+        <Compile Include="obj\Debug\test\test-app.js" />
+        <Compile Include="obj\Debug\public\app\app.js" />
+        <Content Include="obj\Debug\public\css\bootstrap.css" />
+        <Content Include="obj\Debug\public\css\site.css" />
+        <Content Include="obj\Debug\public\css\site.styl" />
+        <Content Include="obj\Debug\public\app\account\navbar-login.html" />
+        <Content Include="obj\Debug\public\app\account\profile.html" />
+        <Content Include="obj\Debug\public\app\account\signup.html" />
+        <Content Include="obj\Debug\public\app\account\navbar-login.jade" />
+        <Content Include="obj\Debug\public\app\account\profile.jade" />
+        <Content Include="obj\Debug\public\app\account\signup.jade" />
+        <Compile Include="obj\Debug\public\app\account\mvAuth.js" />
+        <Compile Include="obj\Debug\public\app\account\mvIdentity.js" />
+        <Compile Include="obj\Debug\public\app\account\mvNavBarLoginCtrl.js" />
+        <Compile Include="obj\Debug\public\app\account\mvProfileCtrl.js" />
+        <Compile Include="obj\Debug\public\app\account\mvSignupCtrl.js" />
+        <Compile Include="obj\Debug\public\app\account\mvUser.js" />
+        <Content Include="obj\Debug\public\app\admin\user-list.html" />
+        <Content Include="obj\Debug\public\app\admin\user-list.jade" />
+        <Compile Include="obj\Debug\public\app\admin\mvUserListCtrl.js" />
+        <Compile Include="obj\Debug\public\app\common\mvNotifier.js" />
+        <Content Include="obj\Debug\public\app\courses\course-details.html" />
+        <Content Include="obj\Debug\public\app\courses\course-list.html" />
+        <Content Include="obj\Debug\public\app\courses\course-details.jade" />
+        <Content Include="obj\Debug\public\app\courses\course-list.jade" />
+        <Compile Include="obj\Debug\public\app\courses\mvCachedCourses.js" />
+        <Compile Include="obj\Debug\public\app\courses\mvCourse.js" />
+        <Compile Include="obj\Debug\public\app\courses\mvCourseDetailCtrl.js" />
+        <Compile Include="obj\Debug\public\app\courses\mvCourseListCtrl.js" />
+        <Content Include="obj\Debug\public\app\main\featured-courses.html" />
+        <Content Include="obj\Debug\public\app\main\main.html" />
+        <Content Include="obj\Debug\public\app\main\new-courses.html" />
+        <Content Include="obj\Debug\public\app\main\featured-courses.jade" />
+        <Content Include="obj\Debug\public\app\main\main.jade" />
+        <Content Include="obj\Debug\public\app\main\new-courses.jade" />
+        <Compile Include="obj\Debug\public\app\main\mvMainCtrl.js" />
+        <Compile Include="obj\Debug\server\config\auth.js" />
+        <Compile Include="obj\Debug\server\config\config.js" />
+        <Compile Include="obj\Debug\server\config\express.js" />
+        <Compile Include="obj\Debug\server\config\mongoose.js" />
+        <Compile Include="obj\Debug\server\config\passport.js" />
+        <Compile Include="obj\Debug\server\config\routes.js" />
+        <Compile Include="obj\Debug\server\controllers\courses.js" />
+        <Compile Include="obj\Debug\server\controllers\users.js" />
+        <Content Include="obj\Debug\server\includes\currentUser.html" />
+        <Content Include="obj\Debug\server\includes\layout.html" />
+        <Content Include="obj\Debug\server\includes\scripts.html" />
+        <Content Include="obj\Debug\server\includes\currentUser.jade" />
+        <Content Include="obj\Debug\server\includes\layout.jade" />
+        <Content Include="obj\Debug\server\includes\scripts.jade" />
+        <Compile Include="obj\Debug\server\models\Course.js" />
+        <Compile Include="obj\Debug\server\models\User.js" />
+        <Compile Include="obj\Debug\server\utilities\encryption.js" />
+        <Content Include="obj\Debug\server\views\index.html" />
+        <Content Include="obj\Debug\server\views\index.jade" />
+        <Compile Include="obj\Debug\test\tests\account\mvUserSpec.js" />
+        <Compile Include="public\app\app.js" />
+        <Content Include="public\css\bootstrap.css" />
+        <Content Include="public\css\site.css" />
+        <Content Include="public\css\site.styl" />
+        <Content Include="public\app\account\navbar-login.html" />
+        <Content Include="public\app\account\profile.html" />
+        <Content Include="public\app\account\signup.html" />
+        <Content Include="public\app\account\navbar-login.jade" />
+        <Content Include="public\app\account\profile.jade" />
+        <Content Include="public\app\account\signup.jade" />
+        <Compile Include="public\app\account\mvAuth.js" />
+        <Compile Include="public\app\account\mvIdentity.js" />
+        <Compile Include="public\app\account\mvNavBarLoginCtrl.js" />
+        <Compile Include="public\app\account\mvProfileCtrl.js" />
+        <Compile Include="public\app\account\mvSignupCtrl.js" />
+        <Compile Include="public\app\account\mvUser.js" />
+        <Content Include="public\app\admin\user-list.html" />
+        <Content Include="public\app\admin\user-list.jade" />
+        <Compile Include="public\app\admin\mvUserListCtrl.js" />
+        <Compile Include="public\app\common\mvNotifier.js" />
+        <Content Include="public\app\courses\course-details.html" />
+        <Content Include="public\app\courses\course-list.html" />
+        <Content Include="public\app\courses\course-details.jade" />
+        <Content Include="public\app\courses\course-list.jade" />
+        <Compile Include="public\app\courses\mvCachedCourses.js" />
+        <Compile Include="public\app\courses\mvCourse.js" />
+        <Compile Include="public\app\courses\mvCourseDetailCtrl.js" />
+        <Compile Include="public\app\courses\mvCourseListCtrl.js" />
+        <Content Include="public\app\main\featured-courses.html" />
+        <Content Include="public\app\main\main.html" />
+        <Content Include="public\app\main\new-courses.html" />
+        <Content Include="public\app\main\featured-courses.jade" />
+        <Content Include="public\app\main\main.jade" />
+        <Content Include="public\app\main\new-courses.jade" />
+        <Compile Include="public\app\main\mvMainCtrl.js" />
+        <Content Include="public\vendor\angular\angular-csp.css" />
+        <Content Include="public\vendor\angular\.bower.json" />
+        <Content Include="public\vendor\angular\bower.json" />
+        <Content Include="public\vendor\angular\README.md" />
+        <Compile Include="public\vendor\angular\angular.js" />
+        <Compile Include="public\vendor\angular\angular.min.js" />
+        <Content Include="public\vendor\angular-mocks\.bower.json" />
+        <Content Include="public\vendor\angular-mocks\bower.json" />
+        <Content Include="public\vendor\angular-mocks\README.md" />
+        <Compile Include="public\vendor\angular-mocks\angular-mocks.js" />
+        <Content Include="public\vendor\angular-resource\.bower.json" />
+        <Content Include="public\vendor\angular-resource\bower.json" />
+        <Content Include="public\vendor\angular-resource\README.md" />
+        <Compile Include="public\vendor\angular-resource\angular-resource.js" />
+        <Compile Include="public\vendor\angular-resource\angular-resource.min.js" />
+        <Content Include="public\vendor\angular-route\.bower.json" />
+        <Content Include="public\vendor\angular-route\bower.json" />
+        <Content Include="public\vendor\angular-route\README.md" />
+        <Compile Include="public\vendor\angular-route\angular-route.js" />
+        <Compile Include="public\vendor\angular-route\angular-route.min.js" />
+        <Content Include="public\vendor\bootstrap\.bower.json" />
+        <Content Include="public\vendor\bootstrap\bower.json" />
+        <Content Include="public\vendor\bootstrap\README.md" />
+        <Content Include="public\vendor\jquery\AUTHORS.txt" />
+        <Content Include="public\vendor\jquery\MIT-LICENSE.txt" />
+        <Content Include="public\vendor\jquery\.bower.json" />
+        <Content Include="public\vendor\jquery\bower.json" />
+        <Content Include="public\vendor\jquery\component.json" />
+        <Content Include="public\vendor\jquery\composer.json" />
+        <Content Include="public\vendor\jquery\package.json" />
+        <Content Include="public\vendor\jquery\CONTRIBUTING.md" />
+        <Content Include="public\vendor\jquery\README.md" />
+        <Compile Include="public\vendor\jquery\Gruntfile.js" />
+        <Compile Include="public\vendor\jquery\jquery-migrate.js" />
+        <Compile Include="public\vendor\jquery\jquery-migrate.min.js" />
+        <Compile Include="public\vendor\jquery\jquery.js" />
+        <Compile Include="public\vendor\jquery\jquery.min.js" />
+        <Content Include="public\vendor\toastr\toastr.css" />
+        <Content Include="public\vendor\toastr\toastr.min.css" />
+        <Content Include="public\vendor\toastr\.bower.json" />
+        <Content Include="public\vendor\toastr\bower.json" />
+        <Compile Include="public\vendor\toastr\toastr.js" />
+        <Compile Include="public\vendor\toastr\toastr.min.js" />
+        <Compile Include="public\vendor\bootstrap\js\affix.js" />
+        <Compile Include="public\vendor\bootstrap\js\alert.js" />
+        <Compile Include="public\vendor\bootstrap\js\button.js" />
+        <Compile Include="public\vendor\bootstrap\js\carousel.js" />
+        <Compile Include="public\vendor\bootstrap\js\collapse.js" />
+        <Compile Include="public\vendor\bootstrap\js\dropdown.js" />
+        <Compile Include="public\vendor\bootstrap\js\modal.js" />
+        <Compile Include="public\vendor\bootstrap\js\popover.js" />
+        <Compile Include="public\vendor\bootstrap\js\scrollspy.js" />
+        <Compile Include="public\vendor\bootstrap\js\tab.js" />
+        <Compile Include="public\vendor\bootstrap\js\tooltip.js" />
+        <Compile Include="public\vendor\bootstrap\js\transition.js" />
+        <Content Include="public\vendor\bootstrap\dist\css\bootstrap-theme.css" />
+        <Content Include="public\vendor\bootstrap\dist\css\bootstrap-theme.min.css" />
+        <Content Include="public\vendor\bootstrap\dist\css\bootstrap.css" />
+        <Content Include="public\vendor\bootstrap\dist\css\bootstrap.min.css" />
+        <Content Include="public\vendor\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+        <Compile Include="public\vendor\bootstrap\dist\js\bootstrap.js" />
+        <Compile Include="public\vendor\bootstrap\dist\js\bootstrap.min.js" />
+        <Compile Include="public\vendor\jquery\build\release-notes.js" />
+        <Compile Include="public\vendor\jquery\build\release.js" />
+        <Content Include="public\vendor\jquery\speed\closest.html" />
+        <Content Include="public\vendor\jquery\speed\css.html" />
+        <Content Include="public\vendor\jquery\speed\event.html" />
+        <Content Include="public\vendor\jquery\speed\filter.html" />
+        <Content Include="public\vendor\jquery\speed\find.html" />
+        <Content Include="public\vendor\jquery\speed\index.html" />
+        <Content Include="public\vendor\jquery\speed\slice.vs.concat.html" />
+        <Content Include="public\vendor\jquery\speed\benchmarker.css" />
+        <Compile Include="public\vendor\jquery\speed\benchmark.js" />
+        <Compile Include="public\vendor\jquery\speed\benchmarker.js" />
+        <Compile Include="public\vendor\jquery\speed\jquery-basis.js" />
+        <Compile Include="public\vendor\jquery\src\ajax.js" />
+        <Compile Include="public\vendor\jquery\src\attributes.js" />
+        <Compile Include="public\vendor\jquery\src\callbacks.js" />
+        <Compile Include="public\vendor\jquery\src\core.js" />
+        <Compile Include="public\vendor\jquery\src\css.js" />
+        <Compile Include="public\vendor\jquery\src\data.js" />
+        <Compile Include="public\vendor\jquery\src\deferred.js" />
+        <Compile Include="public\vendor\jquery\src\deprecated.js" />
+        <Compile Include="public\vendor\jquery\src\dimensions.js" />
+        <Compile Include="public\vendor\jquery\src\effects.js" />
+        <Compile Include="public\vendor\jquery\src\event-alias.js" />
+        <Compile Include="public\vendor\jquery\src\event.js" />
+        <Compile Include="public\vendor\jquery\src\exports.js" />
+        <Compile Include="public\vendor\jquery\src\intro.js" />
+        <Compile Include="public\vendor\jquery\src\manipulation.js" />
+        <Compile Include="public\vendor\jquery\src\offset.js" />
+        <Compile Include="public\vendor\jquery\src\outro.js" />
+        <Compile Include="public\vendor\jquery\src\queue.js" />
+        <Compile Include="public\vendor\jquery\src\selector-native.js" />
+        <Compile Include="public\vendor\jquery\src\serialize.js" />
+        <Compile Include="public\vendor\jquery\src\sizzle-jquery.js" />
+        <Compile Include="public\vendor\jquery\src\support.js" />
+        <Compile Include="public\vendor\jquery\src\traversing.js" />
+        <Compile Include="public\vendor\jquery\src\wrap.js" />
+        <Content Include="public\vendor\jquery\test\delegatetest.html" />
+        <Content Include="public\vendor\jquery\test\hovertest.html" />
+        <Content Include="public\vendor\jquery\test\index.html" />
+        <Content Include="public\vendor\jquery\test\localfile.html" />
+        <Content Include="public\vendor\jquery\test\networkerror.html" />
+        <Content Include="public\vendor\jquery\test\readywait.html" />
+        <Compile Include="public\vendor\jquery\test\jquery.js" />
+        <Compile Include="public\vendor\jquery\src\ajax\jsonp.js" />
+        <Compile Include="public\vendor\jquery\src\ajax\script.js" />
+        <Compile Include="public\vendor\jquery\src\ajax\xhr.js" />
+        <Content Include="public\vendor\jquery\test\data\ua.txt" />
+        <Content Include="public\vendor\jquery\test\data\cleanScript.html" />
+        <Content Include="public\vendor\jquery\test\data\iframe.html" />
+        <Content Include="public\vendor\jquery\test\data\name.html" />
+        <Content Include="public\vendor\jquery\test\data\test2.html" />
+        <Content Include="public\vendor\jquery\test\data\test3.html" />
+        <Content Include="public\vendor\jquery\test\data\test.html" />
+        <Content Include="public\vendor\jquery\test\data\testsuite.css" />
+        <Content Include="public\vendor\jquery\test\data\1x1.jpg" />
+        <Content Include="public\vendor\jquery\test\data\dashboard.xml" />
+        <Content Include="public\vendor\jquery\test\data\with_fries.xml" />
+        <Compile Include="public\vendor\jquery\test\data\badcall.js" />
+        <Compile Include="public\vendor\jquery\test\data\badjson.js" />
+        <Compile Include="public\vendor\jquery\test\data\jquery-1.9.1.ajax_xhr.min.js" />
+        <Compile Include="public\vendor\jquery\test\data\json_obj.js" />
+        <Compile Include="public\vendor\jquery\test\data\readywaitasset.js" />
+        <Compile Include="public\vendor\jquery\test\data\readywaitloader.js" />
+        <Compile Include="public\vendor\jquery\test\data\test.js" />
+        <Compile Include="public\vendor\jquery\test\data\testinit.js" />
+        <Compile Include="public\vendor\jquery\test\data\testrunner.js" />
+        <Compile Include="public\vendor\jquery\test\unit\ajax.js" />
+        <Compile Include="public\vendor\jquery\test\unit\attributes.js" />
+        <Compile Include="public\vendor\jquery\test\unit\callbacks.js" />
+        <Compile Include="public\vendor\jquery\test\unit\core.js" />
+        <Compile Include="public\vendor\jquery\test\unit\css.js" />
+        <Compile Include="public\vendor\jquery\test\unit\data.js" />
+        <Compile Include="public\vendor\jquery\test\unit\deferred.js" />
+        <Compile Include="public\vendor\jquery\test\unit\deprecated.js" />
+        <Compile Include="public\vendor\jquery\test\unit\dimensions.js" />
+        <Compile Include="public\vendor\jquery\test\unit\effects.js" />
+        <Compile Include="public\vendor\jquery\test\unit\event.js" />
+        <Compile Include="public\vendor\jquery\test\unit\exports.js" />
+        <Compile Include="public\vendor\jquery\test\unit\manipulation.js" />
+        <Compile Include="public\vendor\jquery\test\unit\offset.js" />
+        <Compile Include="public\vendor\jquery\test\unit\queue.js" />
+        <Compile Include="public\vendor\jquery\test\unit\selector.js" />
+        <Compile Include="public\vendor\jquery\test\unit\serialize.js" />
+        <Compile Include="public\vendor\jquery\test\unit\support.js" />
+        <Compile Include="public\vendor\jquery\test\unit\traversing.js" />
+        <Compile Include="public\vendor\jquery\test\unit\wrap.js" />
+        <Content Include="public\vendor\jquery\test\data\ajax\unreleasedXHR.html" />
+        <Content Include="public\vendor\jquery\test\data\core\cc_on.html" />
+        <Content Include="public\vendor\jquery\test\data\core\dynamic_ready.html" />
+        <Content Include="public\vendor\jquery\test\data\dimensions\documentLarge.html" />
+        <Content Include="public\vendor\jquery\test\data\dimensions\documentSmall.html" />
+        <Content Include="public\vendor\jquery\test\data\event\focusElem.html" />
+        <Content Include="public\vendor\jquery\test\data\event\onbeforeunload.html" />
+        <Content Include="public\vendor\jquery\test\data\event\promiseReady.html" />
+        <Content Include="public\vendor\jquery\test\data\event\syncReady.html" />
+        <Content Include="public\vendor\jquery\test\data\manipulation\iframe-denied.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\absolute.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\body.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\fixed.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\relative.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\scroll.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\static.html" />
+        <Content Include="public\vendor\jquery\test\data\offset\table.html" />
+        <Content Include="public\vendor\jquery\test\data\selector\html5_selector.html" />
+        <Content Include="public\vendor\jquery\test\data\selector\sizzle_cache.html" />
+        <Content Include="public\vendor\jquery\test\data\support\bodyBackground.html" />
+        <Content Include="public\vendor\jquery\test\data\support\boxSizing.html" />
+        <Content Include="public\vendor\jquery\test\data\support\shrinkWrapBlocks.html" />
+        <Content Include="public\vendor\jquery\test\data\support\testElementCrash.html" />
+        <Compile Include="public\vendor\jquery\test\data\support\csp.js" />
+        <Compile Include="server\config\auth.js" />
+        <Compile Include="server\config\config.js" />
+        <Compile Include="server\config\express.js" />
+        <Compile Include="server\config\mongoose.js" />
+        <Compile Include="server\config\passport.js" />
+        <Compile Include="server\config\routes.js" />
+        <Compile Include="server\controllers\courses.js" />
+        <Compile Include="server\controllers\users.js" />
+        <Content Include="server\includes\currentUser.html" />
+        <Content Include="server\includes\layout.html" />
+        <Content Include="server\includes\scripts.html" />
+        <Content Include="server\includes\currentUser.jade" />
+        <Content Include="server\includes\layout.jade" />
+        <Content Include="server\includes\scripts.jade" />
+        <Compile Include="server\models\Course.js" />
+        <Compile Include="server\models\User.js" />
+        <Compile Include="server\utilities\encryption.js" />
+        <Content Include="server\views\index.html" />
+        <Content Include="server\views\index.jade" />
+        <Compile Include="test\tests\account\mvUserSpec.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".git" />
+        <Folder Include=".git\hooks" />
+        <Folder Include=".git\info" />
+        <Folder Include=".git\logs" />
+        <Folder Include=".git\logs\refs" />
+        <Folder Include=".git\logs\refs\heads" />
+        <Folder Include=".git\logs\refs\remotes" />
+        <Folder Include=".git\logs\refs\remotes\origin" />
+        <Folder Include=".git\objects" />
+        <Folder Include=".git\objects\04" />
+        <Folder Include=".git\objects\13" />
+        <Folder Include=".git\objects\14" />
+        <Folder Include=".git\objects\16" />
+        <Folder Include=".git\objects\1b" />
+        <Folder Include=".git\objects\1c" />
+        <Folder Include=".git\objects\22" />
+        <Folder Include=".git\objects\28" />
+        <Folder Include=".git\objects\2a" />
+        <Folder Include=".git\objects\2d" />
+        <Folder Include=".git\objects\2e" />
+        <Folder Include=".git\objects\30" />
+        <Folder Include=".git\objects\33" />
+        <Folder Include=".git\objects\34" />
+        <Folder Include=".git\objects\35" />
+        <Folder Include=".git\objects\39" />
+        <Folder Include=".git\objects\3a" />
+        <Folder Include=".git\objects\40" />
+        <Folder Include=".git\objects\44" />
+        <Folder Include=".git\objects\49" />
+        <Folder Include=".git\objects\4b" />
+        <Folder Include=".git\objects\50" />
+        <Folder Include=".git\objects\52" />
+        <Folder Include=".git\objects\53" />
+        <Folder Include=".git\objects\55" />
+        <Folder Include=".git\objects\58" />
+        <Folder Include=".git\objects\5c" />
+        <Folder Include=".git\objects\5f" />
+        <Folder Include=".git\objects\63" />
+        <Folder Include=".git\objects\65" />
+        <Folder Include=".git\objects\6a" />
+        <Folder Include=".git\objects\6b" />
+        <Folder Include=".git\objects\6f" />
+        <Folder Include=".git\objects\76" />
+        <Folder Include=".git\objects\77" />
+        <Folder Include=".git\objects\79" />
+        <Folder Include=".git\objects\7b" />
+        <Folder Include=".git\objects\7c" />
+        <Folder Include=".git\objects\7d" />
+        <Folder Include=".git\objects\7f" />
+        <Folder Include=".git\objects\81" />
+        <Folder Include=".git\objects\82" />
+        <Folder Include=".git\objects\83" />
+        <Folder Include=".git\objects\8b" />
+        <Folder Include=".git\objects\8e" />
+        <Folder Include=".git\objects\94" />
+        <Folder Include=".git\objects\95" />
+        <Folder Include=".git\objects\96" />
+        <Folder Include=".git\objects\9b" />
+        <Folder Include=".git\objects\9d" />
+        <Folder Include=".git\objects\9e" />
+        <Folder Include=".git\objects\a1" />
+        <Folder Include=".git\objects\a2" />
+        <Folder Include=".git\objects\a7" />
+        <Folder Include=".git\objects\aa" />
+        <Folder Include=".git\objects\ac" />
+        <Folder Include=".git\objects\b0" />
+        <Folder Include=".git\objects\b1" />
+        <Folder Include=".git\objects\b2" />
+        <Folder Include=".git\objects\b9" />
+        <Folder Include=".git\objects\be" />
+        <Folder Include=".git\objects\c0" />
+        <Folder Include=".git\objects\c9" />
+        <Folder Include=".git\objects\cc" />
+        <Folder Include=".git\objects\cd" />
+        <Folder Include=".git\objects\d0" />
+        <Folder Include=".git\objects\d4" />
+        <Folder Include=".git\objects\d5" />
+        <Folder Include=".git\objects\d6" />
+        <Folder Include=".git\objects\da" />
+        <Folder Include=".git\objects\db" />
+        <Folder Include=".git\objects\dd" />
+        <Folder Include=".git\objects\e2" />
+        <Folder Include=".git\objects\e4" />
+        <Folder Include=".git\objects\e6" />
+        <Folder Include=".git\objects\e8" />
+        <Folder Include=".git\objects\e9" />
+        <Folder Include=".git\objects\eb" />
+        <Folder Include=".git\objects\f0" />
+        <Folder Include=".git\objects\f4" />
+        <Folder Include=".git\objects\fb" />
+        <Folder Include=".git\objects\fe" />
+        <Folder Include=".git\objects\ff" />
+        <Folder Include=".git\objects\info" />
+        <Folder Include=".git\objects\pack" />
+        <Folder Include=".git\refs" />
+        <Folder Include=".git\refs\heads" />
+        <Folder Include=".git\refs\remotes" />
+        <Folder Include=".git\refs\remotes\origin" />
+        <Folder Include=".git\refs\tags" />
+        <Folder Include="obj" />
+        <Folder Include="obj\Debug" />
+        <Folder Include="obj\Debug\bin" />
+        <Folder Include="obj\Debug\public" />
+        <Folder Include="obj\Debug\public\app" />
+        <Folder Include="obj\Debug\public\app\account" />
+        <Folder Include="obj\Debug\public\app\admin" />
+        <Folder Include="obj\Debug\public\app\common" />
+        <Folder Include="obj\Debug\public\app\courses" />
+        <Folder Include="obj\Debug\public\app\main" />
+        <Folder Include="obj\Debug\public\css" />
+        <Folder Include="obj\Debug\server" />
+        <Folder Include="obj\Debug\server\config" />
+        <Folder Include="obj\Debug\server\controllers" />
+        <Folder Include="obj\Debug\server\includes" />
+        <Folder Include="obj\Debug\server\models" />
+        <Folder Include="obj\Debug\server\utilities" />
+        <Folder Include="obj\Debug\server\views" />
+        <Folder Include="obj\Debug\test" />
+        <Folder Include="obj\Debug\test\tests" />
+        <Folder Include="obj\Debug\test\tests\account" />
+        <Folder Include="public" />
+        <Folder Include="public\app" />
+        <Folder Include="public\app\account" />
+        <Folder Include="public\app\admin" />
+        <Folder Include="public\app\common" />
+        <Folder Include="public\app\courses" />
+        <Folder Include="public\app\main" />
+        <Folder Include="public\css" />
+        <Folder Include="public\vendor" />
+        <Folder Include="public\vendor\angular" />
+        <Folder Include="public\vendor\angular-mocks" />
+        <Folder Include="public\vendor\angular-resource" />
+        <Folder Include="public\vendor\angular-route" />
+        <Folder Include="public\vendor\bootstrap" />
+        <Folder Include="public\vendor\bootstrap\dist" />
+        <Folder Include="public\vendor\bootstrap\dist\css" />
+        <Folder Include="public\vendor\bootstrap\dist\fonts" />
+        <Folder Include="public\vendor\bootstrap\dist\js" />
+        <Folder Include="public\vendor\bootstrap\js" />
+        <Folder Include="public\vendor\bootstrap\less" />
+        <Folder Include="public\vendor\jquery" />
+        <Folder Include="public\vendor\jquery\build" />
+        <Folder Include="public\vendor\jquery\speed" />
+        <Folder Include="public\vendor\jquery\src" />
+        <Folder Include="public\vendor\jquery\src\ajax" />
+        <Folder Include="public\vendor\jquery\src\sizzle" />
+        <Folder Include="public\vendor\jquery\test" />
+        <Folder Include="public\vendor\jquery\test\data" />
+        <Folder Include="public\vendor\jquery\test\data\ajax" />
+        <Folder Include="public\vendor\jquery\test\data\core" />
+        <Folder Include="public\vendor\jquery\test\data\dimensions" />
+        <Folder Include="public\vendor\jquery\test\data\event" />
+        <Folder Include="public\vendor\jquery\test\data\manipulation" />
+        <Folder Include="public\vendor\jquery\test\data\offset" />
+        <Folder Include="public\vendor\jquery\test\data\selector" />
+        <Folder Include="public\vendor\jquery\test\data\support" />
+        <Folder Include="public\vendor\jquery\test\qunit" />
+        <Folder Include="public\vendor\jquery\test\unit" />
+        <Folder Include="public\vendor\toastr" />
+        <Folder Include="server" />
+        <Folder Include="server\config" />
+        <Folder Include="server\controllers" />
+        <Folder Include="server\includes" />
+        <Folder Include="server\models" />
+        <Folder Include="server\utilities" />
+        <Folder Include="server\views" />
+        <Folder Include="test" />
+        <Folder Include="test\tests" />
+        <Folder Include="test\tests\account" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
