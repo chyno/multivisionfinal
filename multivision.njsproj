@@ -1,143 +1,144 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{37632f02-bb44-4634-a47f-9d9bca6e9c88}</ProjectGuid>
-        <ProjectHome />
-        <ProjectView>ShowAllFiles</ProjectView>
-        <StartupFile>server.js</StartupFile>
-        <WorkingDirectory>.</WorkingDirectory>
-        <OutputPath>.</OutputPath>
-        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
-    <ItemGroup>
-        <Content Include="logs.txt" />
-        <Content Include="readme.txt" />
-        <Content Include="bower.json" />
-        <Content Include="package.json" />
-        <Compile Include="karma.conf.js" />
-        <Compile Include="server.js" />
-        <Content Include="public\favicon.ico" />
-        <Compile Include="test\test-app.js" />
-        <Compile Include="public\app\app.js" />
-        <Content Include="public\css\bootstrap.css" />
-        <Content Include="public\css\site.css" />
-        <Content Include="public\css\site.styl" />
-        <Content Include="public\app\account\navbar-login.html" />
-        <Content Include="public\app\account\profile.html" />
-        <Content Include="public\app\account\signup.html" />
-        <Content Include="public\app\account\navbar-login.jade" />
-        <Content Include="public\app\account\profile.jade" />
-        <Content Include="public\app\account\signup.jade" />
-        <Compile Include="public\app\account\mvAuth.js" />
-        <Compile Include="public\app\account\mvIdentity.js" />
-        <Compile Include="public\app\account\mvNavBarLoginCtrl.js" />
-        <Compile Include="public\app\account\mvProfileCtrl.js" />
-        <Compile Include="public\app\account\mvSignupCtrl.js" />
-        <Compile Include="public\app\account\mvUser.js" />
-        <Content Include="public\app\admin\user-list.html" />
-        <Content Include="public\app\admin\user-list.jade" />
-        <Compile Include="public\app\admin\mvUserListCtrl.js" />
-        <Compile Include="public\app\common\mvNotifier.js" />
-        <Content Include="public\app\courses\course-details.html" />
-        <Content Include="public\app\courses\course-list.html" />
-        <Content Include="public\app\courses\course-details.jade" />
-        <Content Include="public\app\courses\course-list.jade" />
-        <Compile Include="public\app\courses\mvCachedCourses.js" />
-        <Compile Include="public\app\courses\mvCourse.js" />
-        <Compile Include="public\app\courses\mvCourseDetailCtrl.js" />
-        <Compile Include="public\app\courses\mvCourseListCtrl.js" />
-        <Content Include="public\app\main\featured-courses.html" />
-        <Content Include="public\app\main\main.html" />
-        <Content Include="public\app\main\new-courses.html" />
-        <Content Include="public\app\main\featured-courses.jade" />
-        <Content Include="public\app\main\main.jade" />
-        <Content Include="public\app\main\new-courses.jade" />
-        <Compile Include="public\app\main\mvMainCtrl.js" />
-        <Compile Include="server\config\auth.js" />
-        <Compile Include="server\config\config.js" />
-        <Compile Include="server\config\express.js" />
-        <Compile Include="server\config\mongoose.js" />
-        <Compile Include="server\config\passport.js" />
-        <Compile Include="server\config\routes.js" />
-        <Compile Include="server\controllers\courses.js" />
-        <Compile Include="server\controllers\users.js" />
-        <Content Include="server\includes\currentUser.html" />
-        <Content Include="server\includes\layout.html" />
-        <Content Include="server\includes\scripts.html" />
-        <Content Include="server\includes\currentUser.jade" />
-        <Content Include="server\includes\layout.jade" />
-        <Content Include="server\includes\scripts.jade" />
-        <Compile Include="server\models\Course.js" />
-        <Compile Include="server\models\User.js" />
-        <Compile Include="server\utilities\encryption.js" />
-        <Content Include="server\views\index.html" />
-        <Content Include="server\views\index.jade" />
-        <Compile Include="test\tests\account\mvUserSpec.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="public" />
-        <Folder Include="public\app" />
-        <Folder Include="public\app\account" />
-        <Folder Include="public\app\admin" />
-        <Folder Include="public\app\common" />
-        <Folder Include="public\app\courses" />
-        <Folder Include="public\app\main" />
-        <Folder Include="public\css" />
-        <Folder Include="server" />
-        <Folder Include="server\config" />
-        <Folder Include="server\controllers" />
-        <Folder Include="server\includes" />
-        <Folder Include="server\models" />
-        <Folder Include="server\utilities" />
-        <Folder Include="server\views" />
-        <Folder Include="test" />
-        <Folder Include="test\tests" />
-        <Folder Include="test\tests\account" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
-    <ProjectExtensions>
-        <VisualStudio>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-            <WebProjectProperties>
-              <UseIIS>False</UseIIS>
-              <AutoAssignPort>True</AutoAssignPort>
-              <DevelopmentServerPort>0</DevelopmentServerPort>
-              <DevelopmentServerVPath>/</DevelopmentServerVPath>
-              <IISUrl>http://localhost:48022/</IISUrl>
-              <NTLMAuthentication>False</NTLMAuthentication>
-              <UseCustomServer>True</UseCustomServer>
-              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
-              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-            </WebProjectProperties>
-          </FlavorProperties>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
-            <WebProjectProperties>
-              <StartPageUrl>
-              </StartPageUrl>
-              <StartAction>CurrentPage</StartAction>
-              <AspNetDebugging>True</AspNetDebugging>
-              <SilverlightDebugging>False</SilverlightDebugging>
-              <NativeDebugging>False</NativeDebugging>
-              <SQLDebugging>False</SQLDebugging>
-              <ExternalProgram>
-              </ExternalProgram>
-              <StartExternalURL>
-              </StartExternalURL>
-              <StartCmdLineArguments>
-              </StartCmdLineArguments>
-              <StartWorkingDirectory>
-              </StartWorkingDirectory>
-              <EnableENC>False</EnableENC>
-              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
-            </WebProjectProperties>
-          </FlavorProperties>
-        </VisualStudio>
-    </ProjectExtensions>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37632f02-bb44-4634-a47f-9d9bca6e9c88}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="logs.txt" />
+    <Content Include="readme.txt" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Compile Include="karma.conf.js" />
+    <Compile Include="server.js" />
+    <Content Include="public\favicon.ico" />
+    <Compile Include="test\test-app.js" />
+    <Compile Include="public\app\app.js" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\site.css" />
+    <Content Include="public\css\site.styl" />
+    <Content Include="public\app\account\navbar-login.html" />
+    <Content Include="public\app\account\profile.html" />
+    <Content Include="public\app\account\signup.html" />
+    <Content Include="public\app\account\navbar-login.jade" />
+    <Content Include="public\app\account\profile.jade" />
+    <Content Include="public\app\account\signup.jade" />
+    <Compile Include="public\app\account\mvAuth.js" />
+    <Compile Include="public\app\account\mvIdentity.js" />
+    <Compile Include="public\app\account\mvNavBarLoginCtrl.js" />
+    <Compile Include="public\app\account\mvProfileCtrl.js" />
+    <Compile Include="public\app\account\mvSignupCtrl.js" />
+    <Compile Include="public\app\account\mvUser.js" />
+    <Content Include="public\app\admin\user-list.html" />
+    <Content Include="public\app\admin\user-list.jade" />
+    <Compile Include="public\app\admin\mvUserListCtrl.js" />
+    <Compile Include="public\app\common\mvNotifier.js" />
+    <Content Include="public\app\courses\course-details.html" />
+    <Content Include="public\app\courses\course-list.html" />
+    <Content Include="public\app\courses\course-details.jade" />
+    <Content Include="public\app\courses\course-list.jade" />
+    <Compile Include="public\app\courses\mvCachedCourses.js" />
+    <Compile Include="public\app\courses\mvCourse.js" />
+    <Compile Include="public\app\courses\mvCourseDetailCtrl.js" />
+    <Compile Include="public\app\courses\mvCourseListCtrl.js" />
+    <Content Include="public\app\main\featured-courses.html" />
+    <Content Include="public\app\main\main.html" />
+    <Content Include="public\app\main\new-courses.html" />
+    <Content Include="public\app\main\featured-courses.jade" />
+    <Content Include="public\app\main\main.jade" />
+    <Content Include="public\app\main\new-courses.jade" />
+    <Compile Include="public\app\main\mvMainCtrl.js" />
+    <Compile Include="server\config\auth.js" />
+    <Compile Include="server\config\config.js" />
+    <Compile Include="server\config\express.js" />
+    <Compile Include="server\config\mongoose.js" />
+    <Compile Include="server\config\passport.js" />
+    <Compile Include="server\config\routes.js" />
+    <Compile Include="server\controllers\courses.js" />
+    <Compile Include="server\controllers\users.js" />
+    <Content Include="server\includes\currentUser.html" />
+    <Content Include="server\includes\layout.html" />
+    <Content Include="server\includes\scripts.html" />
+    <Content Include="server\includes\currentUser.jade" />
+    <Content Include="server\includes\layout.jade" />
+    <Content Include="server\includes\scripts.jade" />
+    <Compile Include="server\models\Course.js" />
+    <Compile Include="server\models\User.js" />
+    <Compile Include="server\utilities\encryption.js" />
+    <Content Include="server\views\index.html" />
+    <Content Include="server\views\index.jade" />
+    <Compile Include="test\tests\account\mvIdentitySpec.js" />
+    <Compile Include="test\tests\account\mvUserSpec.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public" />
+    <Folder Include="public\app" />
+    <Folder Include="public\app\account" />
+    <Folder Include="public\app\admin" />
+    <Folder Include="public\app\common" />
+    <Folder Include="public\app\courses" />
+    <Folder Include="public\app\main" />
+    <Folder Include="public\css" />
+    <Folder Include="server" />
+    <Folder Include="server\config" />
+    <Folder Include="server\controllers" />
+    <Folder Include="server\includes" />
+    <Folder Include="server\models" />
+    <Folder Include="server\utilities" />
+    <Folder Include="server\views" />
+    <Folder Include="test" />
+    <Folder Include="test\tests" />
+    <Folder Include="test\tests\account" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
