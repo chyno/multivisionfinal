@@ -79,6 +79,7 @@
     <Content Include="server\views\index.html" />
     <Content Include="server\views\index.jade" />
     <Compile Include="test\tests\account\mvIdentitySpec.js" />
+    <Compile Include="test\tests\account\mvAuthSpec.js" />
     <Compile Include="test\tests\account\mvUserSpec.js" />
   </ItemGroup>
   <ItemGroup>
