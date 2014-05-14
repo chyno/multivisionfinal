@@ -1,5 +1,5 @@
 ﻿describe( 'mvAuth', function () {
-    var mvA, mvI;
+    var mvAuth, mvIdentity;
 
     beforeEach( module( 'app' ) );
     
@@ -8,10 +8,10 @@
         
     }) );
 
-     beforeEach(inject(function(mvAuth, mvIdentity) {
+     beforeEach(inject(function(_mvAuth_, _mvIdentity_) {
 
-         mvA = mvAuth;
-         mvI = mvIdentity;
+         mvAuth = _mvAuth_;
+         mvIdentity = _mvIdentity_;
          
 
           var newUserData = {
@@ -20,7 +20,7 @@
                 firstName: 'John',
                 lastName: 'Chynoweth'
             };
-         mvA.createUser(newUserData);
+         mvAuth.createUser(newUserData);
         
 
      }) );
@@ -29,7 +29,7 @@
     it('should be able to add user', function(done) {
         
         done();
-        expect(mvI.currentUser.username).equal("jchynwoeth");
+        expect(mvIdentity.currentUser.username).equal("jchynwoeth");
         
     });
 
