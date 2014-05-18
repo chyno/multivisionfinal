@@ -20,4 +20,5 @@
            expect(mvIdentity.isAuthorized('admin')).to.be.true;
         }));
     });
+
 })

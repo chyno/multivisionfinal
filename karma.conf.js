@@ -1,5 +1,10 @@
 // Karma configuration
 // Generated on Tue Nov 26 2013 13:55:48 GMT-0700 (Mountain Standard Time)
+var chai = require("chai");
+var sinon = require("sinon");
+var sinonChai = require("sinon-chai");
+chai.should();
+chai.use(sinonChai);
 
 module.exports = function(config) {
   config.set({
@@ -19,7 +24,7 @@ module.exports = function(config) {
       'public/vendor/angular-mocks/angular-mocks.js',
       'test/test-app.js',
       'public/app/**/*.js',
-      'test/tests/**/*.js'
+      'test/tests/*/*.js'
     ],
 
 
